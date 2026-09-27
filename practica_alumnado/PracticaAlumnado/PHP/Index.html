@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Gestionar Alumnado</title>
+        <link rel="stylesheet" href="Estilo.css">
+    </head>
+
+    <body>
+
+        <h1>Inscripcion del Alumnado</h1>
+
+        <form action="Datos.php" method="POST">
+
+            <label>Nombre:</label>
+            <input type="text" name="nombre" required>
+
+            <br>
+
+            <label>Apellidos:</label>
+            <input type="text" name="apellidos" required>
+
+            <br>
+
+            <label>Fecha de Nacimiento:</label>
+            <input type="date" name="fecha_nacimiento" required>
+
+            <br>
+
+            <label>Curso:</label>
+            <input type="radio" name="curso" value="1">1ºESO
+            <br>
+            <input type="radio" name="curso" value="2">2ºESO
+            <br>
+            <input type="radio" name="curso" value="3">3ºESO
+            <br>
+            <input type="radio" name="curso" value="4">4ºESO
+            
+            <br>
+
+            <label>Email de Educamos:</label>
+            <input type="email" name="email" required>
+
+            <br>
+
+            <label>Contraseña de Educamos:</label>
+            <input type="password" name="password" required>
+
+            <br>
+
+            <input type="submit" value="Registrar">
+
+            <br>
+
+            <a href="Alumnos.php">Mostrar Alumnos</a>
+        </form>
+    </body>
+</html>
